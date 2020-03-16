@@ -21,12 +21,11 @@ poundsToGrams: 4
 
 #The problems are between the two --- lines
 #-------------------------------------------------
-ouncesToGallons(24)
 
 '''
 This function converts ounces to gallons using three steps.
 '''
-def ouncesToGallons(ounces
+def ouncesToGallons(ounces):
     #There are eight ounces in a cup
     cups = ounces / 8
     
@@ -36,10 +35,11 @@ def ouncesToGallons(ounces
     #There are four quarts in a gallon
     gallons = quarts / 4
     
-    re gallons
+    return gallons
 
 
-ouncesToGallons()
+x = ouncesToGallons(32)
+print(x)
 
 #------------------------------------------------
 
@@ -51,18 +51,20 @@ This function converts gallons to ounces using three steps.
 '''
 def gallonsToOunces(gallons):
     #There are four quarts in a gallon
-    quarts = gallons + 4
+    quarts = gallons * 4
     
     #There are four cups in a quart
-    cups = quarts - 4
+    cups = quarts * 4
     
     #There are 8 ounces in a cup
-    ounces = cups + 8
+    ounces = cups * 8
     
-    return 
+    return ounces
 
-gallonToOunces(24)
-gallonToOunces(4)
+x = gallonsToOunces(24)
+x = gallonsToOunces(4)
+
+print(x)
 #------------------------------------------------
 
 
@@ -72,17 +74,19 @@ gallonToOunces(4)
 '''
 This function converts grams to pounds using two steps.
 '''
-def gramsToPounds grams):
-    #There are 16 ounces in one pound
-    pounds = ounces / 16
-    
+def gramsToPounds(grams):
     #There are .035 ounces in a gram
     ounces = grams * .035
     
+    #There are 16 ounces in one pound
+    pounds = ounces * 16
+    
+    
     return pounds
 
-gramsToPounds()
-gramsToPounds(360
+x = gramsToPounds(24)
+x = gramsToPounds(360)
+print(x)
 
 #------------------------------------------------
 
@@ -92,16 +96,17 @@ gramsToPounds(360
 '''
 This function converts pounds to grams using two steps.
 '''
-def poundsToGrams(pounds
+def poundsToGrams(pounds):
     #There are 16 ounces in one pound
     ounces = pounds * 16
     
     #There are .035 ounces in a gram
     grams = ounces / .035
     
-     grams
+    return grams
 
-poundsToGrams()
-poundsToGrams 360)
+x = poundsToGrams(24)
+x = poundsToGrams (360)
+print(x)
 
 #------------------------------------------------
